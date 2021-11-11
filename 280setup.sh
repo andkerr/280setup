@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+
+if [ "$#" == 0 ] || [ "$#" -gt 2 ]; then
+    printf "usage: 280setup <project name> [directory]\n"
+    printf "       Project name must be typed as given in the\n"
+    printf "       wget url in the EECS 280 spec\n"
+    printf "       Examples: p2-cv, p1-stats\n"
+
+    exit 1
+fi
+
+if [ -z "$(which wget)" ]; then
+    printf "Could not locate the package wget. Have you installed it?\n"
+    exit 2
+fi
+
+if [ -z "$(which tar)" ]; then
+    printf "Could not locate the package tar. Have you installed it?\n"
+
+    exit 2
+fi
+
+if [ -n "$1" ]; then
+    printf "Beginning setup for ${1}...\n\n\n"
+    wget "https://eecs280staff.github.io/${1}/starter-files.tar.gz"
+
+    if [ $? -ne 0 ]; then
+        printf "Error: Could not find files for $1"
+        exit 3
+    fi
+
+fi
+
+if [ -f ./*.tar.gz ]; then
+    tar xzf starter-files.tar.gz
+
+    for f in starter-files/*.starter; do
+        mv -- "$f" "${f%.starter}"
+    done
+fi
+
+PROJECT_DIR=""
+if [ -n "$2" ]; then
+    PROJECT_DIR=${2}
+    printf "Creating directory ${2}...\n\n"
+    mkdir -- $2
+    mv starter-files/* $2
+    printf "Moving project files to ${2}/...\n\n"
+    rm -rf starter-files starter-files.tar.gz
+else
+    PROJECT_DIR=${1}
+    printf "Creating directory ${1}...\n\n"
+    mkdir -- $1
+    printf "Moving project files to ${1}/...\n\n"
+    mv starter-files/* $1
+    rm -rf starter-files starter-files.tar.gz
+fi
+
+while true; do
+    read -p "Do you want to add the EECS 280 sample .gitignore? [y/n] " answer
+    case ${answer} in
+        [yY] | [yY][eE][sS])
+            printf "adding .gitignore...\n\n"
+            wget https://eecs280staff.github.io/p1-stats/dot_gitignore_sample -O .gitignore
+            mv .gitignore ${PROJECT_DIR}
+            break
+            ;;
+        [nN] | [nN][oO]) break ;;
+        *)
+            printf "Please enter y or n.\n\n"
+            ;;
+    esac
+done
+
+printf "You're all set!\n"
