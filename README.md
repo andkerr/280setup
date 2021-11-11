@@ -12,7 +12,7 @@ To run:
 ./280setup
 ```
 
-Usage:
+Insructions:
 ```
 usage: 280setup <project name> [directory]
        Project name must be typed as given in the
