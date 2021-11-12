@@ -16,7 +16,7 @@ git clone https://github.com/andkerr/280test.git
 
 To run:
 ```bash
-cd 280setup     # navigate to the cloned repo
+cd 280setup     # navigate to the cloned repository
 
 ./280setup <project name> [directory name]      # run to install starter files
 ```
@@ -29,8 +29,7 @@ usage: 280setup <project name> [directory]
        Examples: p2-cv, p1-stats
 ```
 
-#### Example
-To install project 5 starter files:
+For example, to install project 5 starter files:
 ```bash
 ./280setup p5-ml
 ```
