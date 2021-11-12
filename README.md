@@ -18,7 +18,7 @@ git clone https://github.com/andkerr/280test.git
 
 #### Run to Download Files
 ```
-cd 280setup     # navigate to the cloned repository
+cd 280setup                                     # navigate to the cloned repository
 
 ./280setup <project name> [directory name]      # run to install starter files
 ```
