@@ -21,6 +21,7 @@ fi
 
 if [ -n "$1" ]; then
     printf "Beginning setup for ${1}...\n\n\n"
+    printf "Downloading starter files...\n\n"
     wget "https://eecs280staff.github.io/${1}/starter-files.tar.gz"
 
     if [ $? -ne 0 ]; then
@@ -31,6 +32,7 @@ if [ -n "$1" ]; then
 fi
 
 if [ -f ./*.tar.gz ]; then
+    printf "Extracting files...\n\n"
     tar xzf starter-files.tar.gz
 
     for f in starter-files/*.starter; do
