@@ -9,19 +9,19 @@ A basic shell script that:
 - moves your files to a custom-named directory (optional).
 
 
-To install:
+#### Install the Script
 ```bash
 git clone https://github.com/andkerr/280test.git
 ```
 
-To run:
+#### Run to Download Files
 ```bash
 cd 280setup     # navigate to the cloned repository
 
 ./280setup <project name> [directory name]      # run to install starter files
 ```
 
-Insructions:
+#### Usage Instructions
 ```bash
 usage: 280setup <project name> [directory]
        Project name must be typed as given in the
