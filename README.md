@@ -1,4 +1,4 @@
-EECS 280 Setup Scripts
+EECS 280 Setup Script
 ======================
 Set up your EECS 280 starter files, pain free!
 
