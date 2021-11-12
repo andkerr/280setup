@@ -3,7 +3,7 @@ EECS 280 Setup Script
 Set up your EECS 280 starter files, pain free!
 
 A basic shell script that:
-- Downloads all the starter files for the 280 project you specify,
+- Downloads all the starter files _and_ `.gitignore` for the 280 project you specify,
 - removes all `.starter` files suffixes,
 - deletes junk files, and
 - moves your files to a custom-named directory (optional).
