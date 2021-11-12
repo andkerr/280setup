@@ -9,6 +9,8 @@ git clone https://github.com/andkerr/280test.git
 
 To run:
 ```
+cd 280setup
+
 ./280setup
 ```
 
