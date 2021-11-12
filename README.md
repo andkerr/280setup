@@ -22,8 +22,8 @@ cd 280setup     # navigate to the cloned repository
 ```
 
 #### Usage Instructions
-```bash
-usage: 280setup <project name> [directory]
+```
+usage: ./280setup <project name> [directory]
        Project name must be typed as given in the
        wget url in the EECS 280 spec
        Examples: p2-cv, p1-stats
