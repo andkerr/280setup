@@ -6,7 +6,7 @@ A basic shell script that:
 - Downloads all the starter files for the 280 project you specify,
 - removes all `.starter` files suffixes,
 - deletes junk files, and
-- moves your files to a custom-named directory (optional)
+- moves your files to a custom-named directory (optional).
 
 
 To install:
