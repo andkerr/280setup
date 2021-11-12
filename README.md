@@ -16,9 +16,9 @@ git clone https://github.com/andkerr/280test.git
 
 To run:
 ```
-cd 280setup # navigate to the cloned repo
+cd 280setup     # navigate to the cloned repo
 
-./280setup # run to install starter files
+./280setup <project name> [directory name]      # run to install starter files
 ```
 
 Insructions:
@@ -28,5 +28,10 @@ usage: 280setup <project name> [directory]
        wget url in the EECS 280 spec
        Examples: p2-cv, p1-stats
 ```
+
+#### Disclaimer
+This script has only been tested on the Bash shell, which is used by WSL, MacOS,
+and may Linux distributions. It may not work on other systems.
+
 
 By Andrew Kerr <kerrand@protonmail.com>
