@@ -40,7 +40,7 @@ mv <starter file folder> path/to/another/directory
 ```
 
 #### Disclaimer
-This script has only been tested on the Bash shell, which is used by WSL, MacOS,
-and many Linux distributions. It may not work on other systems.
+This script has only been tested on EECS 280-recommended command line tools
+(MacOS Terminal, WSL, Linux) and may not work on other systems.
 
 By Andrew Kerr <kerrand@protonmail.com>
