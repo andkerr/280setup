@@ -36,7 +36,7 @@ For example, to install project 5 starter files:
 ./280setup p5-ml
 ```
 
-#### Relocate Installed Files Using `mv`
+#### Relocate Downloaded Files Using `mv`
 ```
 mv <starter file folder> path/to/another/directory
 ```
