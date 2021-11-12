@@ -16,7 +16,6 @@ fi
 
 if [ -z "$(which tar)" ]; then
     printf "Could not locate the package tar. Have you installed it?\n"
-
     exit 2
 fi
 
