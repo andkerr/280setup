@@ -29,9 +29,15 @@ usage: 280setup <project name> [directory]
        Examples: p2-cv, p1-stats
 ```
 
+#### Example
+To install project 5 starter files:
+```bash
+./280setup p5-ml
+```
+
 #### Disclaimer
 This script has only been tested on the Bash shell, which is used by WSL, MacOS,
-and may Linux distributions. It may not work on other systems.
+and many Linux distributions. It may not work on other systems.
 
 
 By Andrew Kerr <kerrand@protonmail.com>
