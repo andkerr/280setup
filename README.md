@@ -10,12 +10,12 @@ A basic shell script that:
 
 
 #### Install the Script
-```bash
+```
 git clone https://github.com/andkerr/280test.git
 ```
 
 #### Run to Download Files
-```bash
+```
 cd 280setup     # navigate to the cloned repository
 
 ./280setup <project name> [directory name]      # run to install starter files
@@ -30,7 +30,7 @@ usage: ./280setup <project name> [directory]
 ```
 
 For example, to install project 5 starter files:
-```bash
+```
 ./280setup p5-ml
 ```
 
