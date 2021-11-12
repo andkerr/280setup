@@ -10,19 +10,19 @@ A basic shell script that:
 
 
 To install:
-```
+```bash
 git clone https://github.com/andkerr/280test.git
 ```
 
 To run:
-```
+```bash
 cd 280setup     # navigate to the cloned repo
 
 ./280setup <project name> [directory name]      # run to install starter files
 ```
 
 Insructions:
-```
+```bash
 usage: 280setup <project name> [directory]
        Project name must be typed as given in the
        wget url in the EECS 280 spec
