@@ -11,7 +11,7 @@ A basic shell script that:
 
 #### Install the Script
 ```
-git clone https://github.com/andkerr/280test.git
+git clone https://github.com/andkerr/280setup.git
 ```
 
 #### Run to Download Files
