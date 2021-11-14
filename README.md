@@ -1,6 +1,6 @@
 EECS 280 Setup Script
 ======================
-Set up your EECS 280 starter files, pain free!
+Set up EECS 280 project starter files with one command.
 
 A basic shell script that:
 - Downloads all the starter files for the 280 project you specify,
