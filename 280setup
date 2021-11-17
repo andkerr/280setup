@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$#" == 0 ] || [ "$#" -gt 2 ]; then
+if test "$#" == 0 || test "$#" -gt 2; then
     printf "usage: 280setup <project name> [folder name]\n"
     printf "       Project name must be typed as given in the\n"
     printf "       wget url in the EECS 280 spec\n"
@@ -9,29 +9,29 @@ if [ "$#" == 0 ] || [ "$#" -gt 2 ]; then
     exit 1
 fi
 
-if [ -z "$(which wget)" ]; then
+if test -z "$(which wget)"; then
     printf "Could not locate the package wget. Have you installed it?\n"
     exit 2
 fi
 
-if [ -z "$(which tar)" ]; then
+if test -z "$(which tar)"; then
     printf "Could not locate the package tar. Have you installed it?\n"
     exit 2
 fi
 
-if [ -n "$1" ]; then
+if test -n "$1"; then
     printf "Beginning setup for ${1}...\n\n\n"
     printf "Downloading starter files...\n\n"
     wget "https://eecs280staff.github.io/${1}/starter-files.tar.gz"
 
-    if [ $? -ne 0 ]; then
+    if test $? -ne 0; then
         printf "Error: Could not find files for $1"
         exit 3
     fi
 
 fi
 
-if [ -f ./*.tar.gz ]; then
+if test -f ./*.tar.gz; then
     printf "Extracting files...\n\n"
     tar xzf starter-files.tar.gz
 
@@ -41,7 +41,7 @@ if [ -f ./*.tar.gz ]; then
 fi
 
 PROJECT_DIR=""
-if [ -n "$2" ]; then
+if test -n "$2"; then
     PROJECT_DIR=${2}
     printf "Creating directory ${2}...\n\n"
     mkdir -- $2
