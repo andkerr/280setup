@@ -1,0 +1,18 @@
+INSTALL_DIR="/usr/local/bin/"
+
+if test ! -x "280setup"; then
+  printf "Could not locate the 280setup executable\n"
+  exit 1
+fi
+
+if test ! -d ${INSTALL_DIR}; then
+  printf "Could not find ${INSTALL_DIR}\n"
+  exit 2
+fi
+
+cp 280setup ${INSTALL_DIR}
+
+printf "Installed 280setup to ${INSTALL_DIR}\n\n"
+printf "You can now run it from any directory with\n\n"
+printf "    280setup <project-name> [folder name]\n\n"
+printf "Enjoy easy starter file setup!\n"

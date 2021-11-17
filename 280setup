@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$#" == 0 ] || [ "$#" -gt 2 ]; then
-    printf "usage: 280setup <project name> [directory]\n"
+    printf "usage: 280setup <project name> [folder name]\n"
     printf "       Project name must be typed as given in the\n"
     printf "       wget url in the EECS 280 spec\n"
     printf "       Examples: p2-cv, p1-stats\n"

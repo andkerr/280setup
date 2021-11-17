@@ -6,7 +6,7 @@ A basic shell script that:
 - Downloads all the starter files for the 280 project you specify,
 - removes all `.starter` files suffixes,
 - deletes junk files, and
-- moves your files to a custom-named directory (optional).
+- moves your files to a custom-named folder (optional).
 
 
 #### Install the Script
@@ -18,12 +18,12 @@ git clone https://github.com/andkerr/280setup.git
 ```
 cd 280setup                                     # navigate to the cloned repository
 
-./280setup <project name> [directory name]      # run to install starter files
+./280setup <project name> [folder name]      # run to install starter files
 ```
 
 #### Usage Instructions
 ```
-usage: ./280setup <project name> [directory]
+usage: ./280setup <project name> [folder name]
        Project name must be typed as given in the
        wget url in the EECS 280 spec
        Examples: p2-cv, p1-stats
