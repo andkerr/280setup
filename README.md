@@ -1,5 +1,7 @@
 EECS 280 Setup Script
 ======================
+By Andrew Kerr <kerrand@protonmail.com>
+
 Set up EECS 280 project starter files with one command.
 
 A basic shell script that:
@@ -42,5 +44,3 @@ mv <starter file folder> path/to/another/directory
 #### Disclaimer
 This script has only been tested on EECS 280-recommended command line tools
 (MacOS Terminal, WSL, Linux) and may not work on other systems.
-
-By Andrew Kerr <kerrand@protonmail.com>
